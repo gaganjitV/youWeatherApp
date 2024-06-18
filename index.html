@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,400i,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+  <link rel="stylesheet" href="./assets/css/style.css" />
+  <title>Weather Dashboard</title>
+</head>
+
+<body class="flex-column min-100-vh">
+  <header class="header">
+    <h1 class="app-title">
+      <i class="fas fa-cloud"></i> Weather Dashboard
+    </h1>
+  </header>
+
+  <main class="main-content">
+    <div class="left-section col-12 col-md-4">
+
+      <!--Form section for user to input city of choice to populate data-->
+      <div class="card-search">
+        <h2 class="card-header text-uppercase">Search for a City:</h2>
+        <form id="city-search-form" class="card-body">
+          <input name="cityname" id="cityName" type="text" placeholder="Enter city name" autofocus="true" class="form-input" />
+          <button type="submit" class="btn">Search</button>
+        </form>
+      </div>
+
+      <!--Buttons with preset city searches-->
+      <div class="card-buttons" id="preset-cities">
+        <div class="card-body">
+          <button class="btn preset-btn buttonAtlanta" value="Atlanta">Atlanta</button>
+          <button class="btn preset-btn buttonDenver" value="Denver">Denver</button>
+          <button class="btn preset-btn buttonSeattle" value="Seattle">Seattle</button>
+          <button class="btn preset-btn buttonSF" value="San Francisco">San Francisco</button>
+          <button class="btn preset-btn buttonOrlando" value="Orlando">Orlando</button>
+          <button class="btn preset-btn buttonNY" value="New York">New York</button>
+          <button class="btn preset-btn buttonChicago" value="Chicago">Chicago</button>
+          <button class="btn preset-btn buttonAustin" value="Austin">Austin</button>
+        </div>
+        <h4>Search History</h4>
+      </div>
+    </div>
+
+    <!--Today's Weather and Five Day Forecast-->
+    <div class="right-section col-12 col-md-8 weather-info">
+      <div class="today-weather card-today">
+        <div class="card-body">
+          <h2><span id="current-city"></span><span id="current-date"></span></h2>
+          <p id="weather-forecast-today"></p>
+          <p>Temp: <span id="current-temp"></span></p>
+          <p>Wind: <span id="current-wind"></span></p>
+          <p>Humidity: <span id="current-humidity"></span></p>
+        </div>
+      </div>
+      <div class="forecast-section card-forcast">
+        <div class="card-body1">
+          <h2>5-Day Forecast:</h2>
+          <section id="forecast-container" class="d-flex flex-row justify-center">
+            <div class="card forecast-card">
+              <div class="card-body">
+                <h3><span class="forecast-date-one"></span></h3>
+                <p id="weather-forecast-one-day"></p>
+                <p>Temp: <span class="temp-one"></span></p>
+                <p>Wind: <span class="wind-one"></span></p>
+                <p>Humidity: <span class="humidity-one"></span></p>
+              </div>
+            </div>
+            <div class="card forecast-card">
+              <div class="card-body2">
+                <h3><span class="forecast-date-two"></span></h3>
+                <p id="weather-forecast-two-day"></p>
+                <p>Temp: <span class="temp-two"></span></p>
+                <p>Wind: <span class="wind-two"></span></p>
+                <p>Humidity: <span class="humidity-two"></span></p>
+              </div>
+            </div>
+            <div class="card forecast-card">
+              <div class="card-bod3">
+                <h3><span class="forecast-date-three"></span></h3>
+                <p id="weather-forecast-three-day"></p>
+                <p>Temp: <span class="temp-three"></span></p>
+                <p>Wind: <span class="wind-three"></span></p>
+                <p>Humidity: <span class="humidity-three"></span></p>
+              </div>
+            </div>
+            <div class="card forecast-card">
+              <div class="card-body4">
+                <h3><span class="forecast-date-four"></span></h3>
+                <p id="weather-forecast-four-day"></p>
+                <p>Temp: <span class="temp-four"></span></p>
+                <p>Wind: <span class="wind-four"></span></p>
+                <p>Humidity: <span class="humidity-four"></span></p>
+              </div>
+            </div>
+            <div class="card forecast-card">
+              <div class="card-body5">
+                <h3><span class="forecast-date-five"></span></h3>
+                <p id="weather-forecast-five-day"></p>
+                <p>Temp: <span class="temp-five"></span></p>
+                <p>Wind: <span class="wind-five"></span></p>
+                <p>Humidity: <span class="humidity-five"></span></p>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/dayjs@1.11.3/dayjs.min.js" integrity="sha256-iu/zLUB+QgISXBLCW/mcDi/rnf4m4uEDO0wauy76x7U=" crossorigin="anonymous"></script>
+  <script src="./assets/js/script.js"></script>
+  <script src="https://kit.fontawesome.com/4481c1b8a0.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
