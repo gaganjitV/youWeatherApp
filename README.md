@@ -19,11 +19,10 @@ Deployed Application: https://gaganjitv.github.io/youWeatherApp/
 
 The main use cases for this weather project are:
 
-1)Search Option: Users can search for weather information (temperature, wind, humidity, weather conditions) for any cities available in the OpenWeather API.
-2)Preset Buttons: The application includes preset buttons with city names for quick access and display of weather information.
-3)Detailed Weather Information: Each city search provides present-day weather information and a five-day forecast for the respective city.
-
-4)Local Storage: Utilizing local storage to store user data persistently, such as search history and preferences.
+1) Search Option: Users can search for weather information (temperature, wind, humidity, weather conditions) for any cities available in the OpenWeather API.
+2) Preset Buttons: The application includes preset buttons with city names for quick access and display of weather information.
+3) Detailed Weather Information: Each city search provides present-day weather information and a five-day forecast for the respective city.
+4) Local Storage: Utilizing local storage to store user data persistently, such as search history and preferences.
 
 ## Screenshot of Application
 ![Screenshot 2024-06-17 at 10 03 56 PM](https://github.com/gaganjitV/youWeatherApp/assets/83557584/f99acccf-136a-4875-946d-d6a773777a93)
